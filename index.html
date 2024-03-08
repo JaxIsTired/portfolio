@@ -1,348 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="images" href="assets/img/s.icon.png">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images" href="assets/img/s.icon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
-        <title>Steven P. Cea</title>
-        <!-- CSS -->
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Steven P. Cea</title>
+    <!-- CSS -->
 
 
-<!-- JavaScript -->
-<script>
-    function opentab(tabName) {
-        var i, tabLinks, tabContents;
-        tabLinks = document.getElementsByClassName("tab-links");
-        tabContents = document.getElementsByClassName("tab-contents");
-        for (i = 0; i < tabContents.length; i++) {
-            tabLinks[i].classList.remove("active-link");
-            tabContents[i].style.display = "none";
+    <!-- JavaScript -->
+    <script>
+        function opentab(tabName) {
+            var i, tabLinks, tabContents;
+            tabLinks = document.getElementsByClassName("tab-links");
+            tabContents = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < tabContents.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+                tabContents[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active-link");
         }
-        document.getElementById(tabName).style.display = "block";
-        event.currentTarget.classList.add("active-link");
-    }
-</script>
+    </script>
 
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">STEVEN PORTFOLIO</a>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">STEVEN PORTFOLIO</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li id="indicator" class="nav__item"></li>
+                    <img src="assets/img/moon.png" id="icon">
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hello,<br>I'm Steven <span class="home__title-color">Cea</span><br>And I am a
+                </h1>
+                <ul class="option">
+                    <li><span>Fresh Graduate</span></li>
+
+                    <li><span>IT Graduate</span></li>
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/ceasteven/" class="home__social-icon"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/vtmnstvn/" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/steeveeen__" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/steven-cea-252689176/" class="home__social-icon"> <i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/JaxIsTired" class="home__social-icon"><i class='bx bxl-github'></i></a>
+
+            </div>
+
+            <div class="home__img">
+                <img class="home__blob-img" src="assets/img/steven1.png" alt="Profile Image">
+            </div>
+
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/steven.jpg" alt="">
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                   
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li id="indicator" class="nav__item"></li>
-                        <img src="assets/img/moon.png" id="icon">
-                        
-                    </ul>
-                </div>
+                <div class="about__info">
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-                
-            </nav>
-        </header>
+                    <p class="about__text" style="text-align: justify;">A passionate and motivated Information
+                        Technology student. Although I may not have professional experience yet, I am eager to learn and
+                        grow in the field of IT. I have a strong interest in technology and a desire to contribute to
+                        innovative projects. </p>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hello,<br>I'm Steven <span class="home__title-color">Cea</span><br>And I am a</h1>
-                    <ul class="option">
-                       <li><span>Fresh Graduate</span></li>
-               
-                       <li><span>IT Graduate</span></li>
-                    </ul>
-                </div>
-
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.facebook.com/ceasteven/" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/vtmnstvn/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com/steeveeen__" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.linkedin.com/in/steven-cea-252689176/" class="home__social-icon"> <i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/JaxIsTired" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    
-                </div>
-
-                <div class="home__img">
-                    <img class="home__blob-img" src="assets/img/steven1.png" alt="Profile Image">
-                  </div>
-                  
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/steven.jpg" alt="">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('trainings')"><b>Trainings</b></p>
                     </div>
-                    
-                    <div class="about__info">
-                       
-                        <p class="about__text" style="text-align: justify;">A passionate and motivated Information Technology student. Although I may not have professional experience yet, I am eager to learn and grow in the field of IT. I have a strong interest in technology and a desire to contribute to innovative projects. </p>       
-                    
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
-                            <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
-                            <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
-                            <p class="tab-links" onclick="opentab('trainings')"><b>Trainings</b></p>
-                        </div>
-                    
-                        <div class="tab-contents active-tab" id="skills">
-                            <!-- <ul style="list-style:square">
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- <ul style="list-style:square">
                                 <li>• Proficient with Microsoft Word, Excel, and PowerPoint</li>
                                 <li>• Good sense of leadership</li>
                                 <li>• Good in problem-solving, analytical, and evaluation skills</li>
                                 <li>• Troubleshooting Skills</li>
                                 <li>• Basic Web Developing</li>
                             </ul> -->
-                            <div class="skills__container bd-grid">          
-                                <div>
-                                    
-                                    <div class="skills__data">
-                                        <div class="skills__names">
-                                            <i class='bx bxl-html5 skills__icon'></i>
-                                            <span class="skills__name">HTML</span>
-                                        </div>
-                                        <div class="skills__bar skills__html">
-            
-                                        </div>
-                                        <div>
-                                            <span class="skills__percentage"></span>
-                                        </div>
+                        <div class="skills__container bd-grid">
+                            <div>
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-html5 skills__icon'></i>
+                                        <span class="skills__name">HTML</span>
                                     </div>
-                                    <div class="skills__data">
-                                        <div class="skills__names">
-                                            <i class='bx bxl-css3 skills__icon'></i>
-                                            <span class="skills__name">CSS</span>
-                                        </div>
-                                        <div class="skills__bar skills__css">
-                                            
-                                        </div>
-                                        <div>
-                                            <span class="skills__percentage"></span>
-                                        </div>
+                                    <div class="skills__bar skills__html">
+
                                     </div>
-                                    <div class="skills__data">
-                                        <div class="skills__names">
-                                            <i class='bx bxl-javascript skills__icon' ></i>
-                                            <span class="skills__name">JAVASCRIPT</span>
-                                        </div>
-                                        <div class="skills__bar skills__js">
-                                            
-                                        </div>
-                                        <div>
-                                            <span class="skills__percentage"></span>
-                                        </div>
+                                    <div>
+                                        <span class="skills__percentage"></span>
                                     </div>
-                                    <div class="skills__data">
-                                        <div class="skills__names">
-                                            <i class='bx bx-php skills__icon' ></i>
-                                            <span class="skills__name">PHP</span>
-                                        </div>
-                                        <div class="skills__bar skills__js">
-                                            
-                                        </div>
-                                        <div>
-                                            <span class="skills__percentage"></span>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <div class="skills__names">
-                                            <i class="fab fa-laravel skills__icon"></i>
-                                            <span class="skills__name">Laravel</span>
-                                        </div>
-                                        <div class="skills__bar skills__js">
-                                            
-                                        </div>
-                                        <div>
-                                            <span class="skills__percentage"></span>
-                                        </div>
-                                    </div>
-                                
                                 </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-css3 skills__icon'></i>
+                                        <span class="skills__name">CSS</span>
+                                    </div>
+                                    <div class="skills__bar skills__css">
+
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-javascript skills__icon'></i>
+                                        <span class="skills__name">JAVASCRIPT</span>
+                                    </div>
+                                    <div class="skills__bar skills__js">
+
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bx-php skills__icon'></i>
+                                        <span class="skills__name">PHP</span>
+                                    </div>
+                                    <div class="skills__bar skills__js">
+
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class="fab fa-laravel skills__icon"></i>
+                                        <span class="skills__name">Laravel</span>
+                                    </div>
+                                    <div class="skills__bar skills__js">
+
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage"></span>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2019 - 2023</span><br>Bachelor of Science in Information Technology
-                                    <br>City College of Tagaytay</li>
-                                <li><span>2018 - 2019</span><br>Amadeo Weste Cavite Instituto de Le Mar <br>Senior High School</li>
-                                <li><span>2017 - 2018</span><br>San Rafael National High School <br>Senior High School</li>
-                                <li><span>2013 - 2017</span><br>Saint Andrew Academy <br>Junior High School</li>
-                                <li><span>2007 - 2013</span><br>Sibaguan Elementary School <br>Primary School</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Encoder- On-the-Job Training</span><br>Accounting Office, LGU Mendez-Nunez</li>
-                                <li><span>Student Teacher - Work Immersion</span><br>Amadeo Weste Cavite Instituto de Le Mar</li>
-                               
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="trainings">
-                            <ul>
-                                <li><span>June 2023</span><br><b>ICT 101: Introduction to Technology and Its Effect</b>
-                                    <br>Department of Information and Communications Technology – Region IV-B
-                                </li>
-                                <li><span>April 2023</span><br><b>Image Identification Using Convolutional Neural Network</b>
-                                    <br>Department of Information and Communications Technology – Region IV-A
-                                </li>
-                                <li><span>February 2023</span><br><b>Cybersecurity Awareness Program for City College of
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Bachelor of Science in Information Technology
+                                <br>City College of Tagaytay
+                            </li>
+                            <li><span>2018 - 2019</span><br>Amadeo Weste Cavite Instituto de Le Mar <br>Senior High
+                                School</li>
+                            <li><span>2017 - 2018</span><br>San Rafael National High School <br>Senior High School</li>
+                            <li><span>2013 - 2017</span><br>Saint Andrew Academy <br>Junior High School</li>
+                            <li><span>2007 - 2013</span><br>Sibaguan Elementary School <br>Primary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Encoder- On-the-Job Training</span><br>Accounting Office, LGU Mendez-Nunez</li>
+                            <li><span>Student Teacher - Work Immersion</span><br>Amadeo Weste Cavite Instituto de Le Mar
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="trainings">
+                        <ul>
+                            <li><span>June 2023</span><br><b>ICT 101: Introduction to Technology and Its Effect</b>
+                                <br>Department of Information and Communications Technology – Region IV-B
+                            </li>
+                            <li><span>April 2023</span><br><b>Image Identification Using Convolutional Neural
+                                    Network</b>
+                                <br>Department of Information and Communications Technology – Region IV-A
+                            </li>
+                            <li><span>February 2023</span><br><b>Cybersecurity Awareness Program for City College of
                                     Tagaytay by Department of Information and
                                     Communication Technology</b>
-                                    <br>Department of Information and Communications Technology – Region IV-A
-                                </li>
-                                <li><span>June 2022</span><br><b>Cybersecurity Awareness Program for Students of
+                                <br>Department of Information and Communications Technology – Region IV-A
+                            </li>
+                            <li><span>June 2022</span><br><b>Cybersecurity Awareness Program for Students of
                                     Cavite in Celebration of the National ICT Month
-                                    </b>
-                                    <br>Department of Information and Communications Technology – Region IV-A
-                                </li>
-                            </ul>
-                        </div>
-                        
+                                </b>
+                                <br>Department of Information and Communications Technology – Region IV-A
+                            </li>
+                        </ul>
                     </div>
-                      
-                    
-                                                    
+
                 </div>
-                
-            </section>
 
-    
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-              
-                <div class="work__container bd-grid">
-                  <div class="work__item">
+
+            </div>
+
+        </section>
+
+
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__item">
                     <a href="https://www.tagaytayprofilingsystem.tech/login" class="work__img">
-                      <img src="assets/img/tps.jpg" alt="">
+                        <img src="assets/img/tps.jpg" alt="">
                     </a>
                     <h3 class="work__title">Tagaytay Profiling System - Laravel </h3>
-                  </div>
-                  <div class="work__item">
+                </div>
+                <div class="work__item">
                     <a href="https://github.com/JaxIsTired/Mi_Card_Flutter" class="work__img">
-                      <img src="assets/img/mi-card.jpg" alt="">
+                        <img src="assets/img/mi-card.jpg" alt="">
                     </a>
                     <h3 class="work__title">Mi-Card - Flutter </h3>
-                  </div>
-                  <div class="work__item">
+                </div>
+                <div class="work__item">
                     <a href="#work" class="work__img">
                         <img src="assets/img/dice.jpg" alt="">
                     </a>
                     <h3 class="work__title">Dice - Flutter </h3>
-                  </div>
-                  <div class="work__item">
+                </div>
+                <div class="work__item">
                     <a href="#work" class="work__img">
                         <img src="assets/img/xy.jpg" alt="">
                     </a>
                     <h3 class="work__title">Xylophone - Flutter </h3>
-                  </div>
-                  <div class="work__item">
+                </div>
+                <div class="work__item">
                     <a href="#work" class="work__img">
                         <img src="assets/img/question.jpg" alt="">
                     </a>
                     <h3 class="work__title">Questionnaire - Flutter </h3>
-                  </div>
-                  <div class="work__item">
+                </div>
+                <div class="work__item">
                     <a href="#work" class="work__img">
                         <img src="assets/img/bmi.jpg" alt="">
                     </a>
                     <h3 class="work__title">BMI Calculator - Flutter </h3>
-                  </div>
-                  <!-- Add more work__item elements for other images -->
                 </div>
-              </section>
+                <!-- Add more work__item elements for other images -->
+            </div>
+        </section>
 
-              
-            
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact Me</h2>
-                <div class="contact__container bd-grid">
-                  <div class="contact-left">
-                 
-                    <p><i class='bx bx-location-plus' ></i> Patutong Malaki North, Tagaytay City, Cavite</p>
+
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact__container bd-grid">
+                <div class="contact-left">
+
+                    <p><i class='bx bx-location-plus'></i> Patutong Malaki North, Tagaytay City, Cavite</p>
                     <p><i class='bx bx-envelope'></i> stevenpaanocea@gmail.com</p>
-                    <p><i class='bx bx-phone' ></i> 09554521375</p>
+                    <p><i class='bx bx-phone'></i> 09554521375</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/ceasteven/" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.instagram.com/vtmnstvn/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                        <a href="https://twitter.com/steeveeen__" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                        <a href="https://www.linkedin.com/in/ceasteven" class="home__social-icon"> <i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/ceasteven" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.facebook.com/ceasteven/" class="home__social-icon"><i
+                                class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/vtmnstvn/" class="home__social-icon"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/steeveeen__" class="home__social-icon"><i
+                                class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/in/ceasteven" class="home__social-icon"> <i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/ceasteven" class="home__social-icon"><i
+                                class='bx bxl-github'></i></a>
                     </div>
                     <a href="assets/img/Cea_Steven-Resume.pdf" download class="btn btn2">Download CV</a>
-                  </div>
-                  <div class="contact-right">
-                    <form action="https://formsubmit.co/stevencea143@gmail.com" method="POST" class="contact__form">
-                      <input name="Name" type="text" placeholder="Name" class="contact__input">
-                      <input name="Email" type="email" placeholder="Email" class="contact__input">
-                      <textarea name="Message" placeholder="Input Message" cols="0" rows="10" class="contact__input"></textarea>
-                      <button type="submit" class="contact__button button">Send</button>
-                    </form>
-                  </div>
                 </div>
-              </section>
-              
-            
-            <a href="#home">
-                <a class="up" href="#home"> <i class="fas fa-arrow-up"></i></a>
-            </a>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-          
-           
-            <p class="footer__copy">&#169;All rights reserved</p>
-        </footer>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/stevencea143@gmail.com" method="POST" class="contact__form">
+                        <input name="Name" type="text" placeholder="Name" class="contact__input">
+                        <input name="Email" type="email" placeholder="Email" class="contact__input">
+                        <textarea name="Message" placeholder="Input Message" cols="0" rows="10"
+                            class="contact__input"></textarea>
+                        <button type="submit" class="contact__button button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <a href="#home">
+            <a class="up" href="#home"> <i class="fas fa-arrow-up"></i></a>
+        </a>
+    </main>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-       
-        <script>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
 
-            var icon=document.getElementById("icon")
-            icon.onclick = function(){
-                document.body.classList.toggle("dark-theme");
-                if(document.body.classList.contains("dark-theme")){
-                    icon.src ="assets/img/sun.png";
-                    document.getElementById("indicator").innerHTML = "";
-                }
-                else{
-                    icon.src="assets/img/moon.png";
-                    document.getElementById("indicator").innerHTML = "";
-                }
+
+        <p class="footer__copy">&#169;All rights reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+        var icon = document.getElementById("icon")
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "assets/img/sun.png";
+                document.getElementById("indicator").innerHTML = "";
             }
+            else {
+                icon.src = "assets/img/moon.png";
+                document.getElementById("indicator").innerHTML = "";
+            }
+        }
 
-        </script>
+    </script>
 
-    </body>
+</body>
+
 </html>
